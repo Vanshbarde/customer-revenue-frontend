@@ -1,0 +1,28 @@
+import type { ErrorComponentProps } from "@tanstack/react-router";
+import { TriangleAlert } from "lucide-react";
+
+export function AppErrorComponent({ error }: ErrorComponentProps) {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center gap-3 bg-paper px-6 text-center text-fg">
+      <span className="text-danger" aria-hidden="true">
+        <TriangleAlert className="size-10" strokeWidth={2} />
+      </span>
+      <h1 className="text-lg font-semibold">Something went wrong</h1>
+      <p className="max-w-md text-sm break-words text-fg-muted">
+        {error.message || "An unexpected error occurred. Try reloading the page."}
+      </p>
+    </main>
+  );
+}
+
+export function AppNotFound() {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center gap-3 bg-paper px-6 text-center text-fg">
+      <h1 className="text-lg font-semibold">Page not found</h1>
+      <p className="text-sm text-fg-muted">That route is not part of the CRIOI workspace.</p>
+      <a href="/app" className="text-sm font-medium text-primary hover:underline">
+        Back to dashboard
+      </a>
+    </main>
+  );
+}

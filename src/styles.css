@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-ink: #0b1220;
+  --color-ink-soft: #151d2e;
+  --color-ink-hover: #1c2740;
+  --color-paper: #f3f5fa;
+  --color-paper-2: #e8ecf4;
+  --color-surface: #ffffff;
+  --color-fg: #121826;
+  --color-fg-muted: #5b6578;
+  --color-fg-subtle: #8b93a7;
+  --color-primary: #4f6bff;
+  --color-primary-fg: #ffffff;
+  --color-primary-soft: #eef1ff;
+  --color-primary-hover: #3d58f0;
+  --color-accent: #0f9d8a;
+  --color-accent-soft: #e6f7f4;
+  --color-border: #e2e7f0;
+  --color-border-strong: #cdd5e4;
+  --color-sidebar: #0b1220;
+  --color-sidebar-fg: #e8ecf4;
+  --color-sidebar-muted: #93a0b8;
+  --color-danger: #e11d48;
+  --color-danger-soft: #ffe4ea;
+  --color-warn: #d97706;
+  --color-warn-soft: #fff4e0;
+  --color-good: #059669;
+  --color-good-soft: #e6f7f0;
+  --color-chart-1: #4f6bff;
+  --color-chart-2: #0f9d8a;
+  --color-chart-3: #f59e0b;
+  --color-chart-4: #e11d48;
+  --color-chart-5: #6366f1;
+  --color-chart-6: #06b6d4;
+  --color-chart-7: #84cc16;
+  --color-chart-8: #f97316;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-2xl: 28px;
+
+  --shadow-card: 0 0 0 1px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.04),
+    0 8px 24px -12px rgba(15, 23, 42, 0.08);
+  --shadow-card-hover: 0 0 0 1px rgba(15, 23, 42, 0.08), 0 4px 12px rgba(15, 23, 42, 0.06),
+    0 16px 32px -16px rgba(15, 23, 42, 0.12);
+  --shadow-pop: 0 0 0 1px rgba(15, 23, 42, 0.08), 0 16px 40px -12px rgba(15, 23, 42, 0.22);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #c5cddc transparent;
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

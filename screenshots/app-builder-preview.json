@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "CRIOI",
+      "hasCanvas": false,
+      "bodyTextLen": 825,
+      "bodyTextHash": "fa526dfd75a54ff597822763c9576f51277c2fdd2204c54a546a9577d765ceed",
+      "bodyTextPrefix": "CRIOI REVENUE INTELLIGENCE About Sign in Get started CUSTOMER RE",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "CRIOI",
+      "hasCanvas": false,
+      "bodyTextLen": 819,
+      "bodyTextHash": "8a3921d75b74512029d99aecedf634d4d118893e30c7c5022299e252e0401c86",
+      "bodyTextPrefix": "CRIOI REVENUE INTELLIGENCE Sign in Get started CUSTOMER REVENUE ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

@@ -1,0 +1,1 @@
+import{o as e}from"./useStore-Bwb3bsWW.js";import{t}from"./app-shell-Bo9MTabs.js";import{n}from"./session-gate-Clp9NSo6.js";var r=e();function i(){return(0,r.jsx)(n,{children:(0,r.jsx)(t,{})})}export{i as component};
